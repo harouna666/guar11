@@ -7,17 +7,80 @@ u68662@web-server:~/www$ nano index.html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Bienvenue</title>
+  <meta charset="UTF-8" />
+  <title>Projet guar11 - Galerie</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 0 1em;
+      background: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1em;
+      justify-content: center;
+    }
+    li {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 0.5em;
+      width: 180px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 0.5em;
+      border-radius: 4px;
+    }
+    a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <h1>Bienvenue sur mon projet guar11</h1>
   <p>Accès aux fichiers :</p>
   <ul>
-    <li><a href="files/index.php">index.php</a></li>
-    <li><a href="files/FileZilla.png">Capture FileZilla</a></li>
-    <li><a href="files/Putty.png">Capture Putty</a></li>
-    <li><a href="files/image.png">image.png</a></li>
+    <li>
+      <a href="index.php">index.php</a>
+    </li>
+    <li>
+      <a href="files/FileZilla.png" target="_blank">
+        <img src="files/FileZilla.png" alt="Capture FileZilla" />
+        Capture FileZilla
+      </a>
+    </li>
+    <li>
+      <a href="files/Putty.png" target="_blank">
+        <img src="files/Putty.png" alt="Capture Putty" />
+        Capture Putty
+      </a>
+    </li>
+    <li>
+      <a href="files/image.png" target="_blank">
+        <img src="files/image.png" alt="Image" />
+        Image
+      </a>
+    </li>
   </ul>
 </body>
 </html>
+
